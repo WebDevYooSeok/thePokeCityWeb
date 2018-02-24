@@ -1,0 +1,22 @@
+{
+  "name": "thepokecityweb",
+  "version": "1.0.0",
+  "description": "the poke city website dev",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDevYooSeok/thePokeCityWeb.git"
+  },
+  "keywords": [
+    "poke"
+  ],
+  "author": "yooseok seo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebDevYooSeok/thePokeCityWeb/issues"
+  },
+  "homepage": "https://github.com/WebDevYooSeok/thePokeCityWeb#readme"
+}
