@@ -1,61 +1,186 @@
 /* this is for main layout */
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
 
-html, body{
-
+html, body {
   /* TODO: later */
   height: 150%;
-
 }
 
-
-#orderDelivery{
-  height: 3rem;
-
+#orderDelivery {
+  height: 2rem;
   /* TODO: later */
   border: 1px solid gray;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-
 /* this is for navigation */
 
-/* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #333;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+.addTopMargin {
+  margin-top: 5.5rem;
+}
+
+/* Style the navbar */
+
+#navbar {
+  height: 5rem;
+  overflow: hidden;
+  background: #E54B4B;
+  color: #EBEBD3;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Logo Name HambergerMenu";
+  /* TODO: later */
+  border: 1px solid gray;
+}
+
+#logo-img {
+  border: 1px solid gray;
+  width: 4rem;
+  height: 4rem;
+}
+
+#navbar::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.logo {
+  margin: auto;
+  grid-area: Logo;
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+.site-nav {
+  display: none;
+}
+
+#orderOnline {
+  display: none;
+}
+
+#site-name {
+  grid-area: Name;
+  margin: auto;
+}
+
+#site-name-box {
+  font-size: 2.5rem;
+}
+
+#site-hamburger {
+  margin: auto;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  content: '';
+  display: block;
+  background: #EBEBD3;
+  height: 3px;
+  width: 2.75rem;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-0.8rem);
+}
+
+.hamburger::after {
+  transform: translateY(0.7rem);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+/*  Done */
+
 /* Navbar links */
+
 #navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px;
+  padding: 1rem;
   text-decoration: none;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+
+
+.site-nav-hamberger-open{
+  display: none;
+}
+#site-nav-hamberger-open{
+  display: block;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+/* for desktop version*/
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+@media (min-width: 700px) {
+  #navbar {
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-areas: "Logo Nav Order";
+  }
+  .menu-toggle {
+    display: none;
+  }
+  #orderOnline {
+    margin: auto;
+  }
+  #orderOnline-btn {
+    border: 1px solid gray;
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-area: Nav;
+  }
+  #site-name {
+    display: none;
+  }
+  #orderOnline {
+    display: block;
+  }
+  .site-nav a {
+    font-size: 1.5rem;
+  }
+  .site-nav a:hover, .site-nav a:focus {
+    background: transparent;
+  }
 }

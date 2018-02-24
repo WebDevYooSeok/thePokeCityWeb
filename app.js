@@ -29,10 +29,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 // route
 app.get('/', function(req, res){
   res.render('home');
-})
+});
+
+app.get('/menu', function(req, res){
+  res.render('menu');
+});
+
+app.get('/gallery', function(req, res){
+  res.render('gallery');
+});
+
+app.get('/about', function(req, res){
+  res.render('about');
+});
+
+app.get('/contact', function(req, res){
+  res.render('contact');
+});
+
 
 
 
 app.listen(3000, function(){
   console.log('server started on Port 3000 ... the Poke City Web start!');
-})
+});
