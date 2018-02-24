@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/WebDevYooSeok/thePokeCityWeb/issues"
   },
-  "homepage": "https://github.com/WebDevYooSeok/thePokeCityWeb#readme"
+  "homepage": "https://github.com/WebDevYooSeok/thePokeCityWeb#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0"
+  }
 }
