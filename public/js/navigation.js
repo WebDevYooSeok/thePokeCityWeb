@@ -4,6 +4,8 @@ window.onscroll = function() {stickyFunc()};
 // Get the navbar
 var navbar = document.getElementById("navbar");
 var menu = $('.main');
+//var navHamburgerContainter= $('#site-nav-hamberger-open');
+var navHamburgerContent= $('.site-nav-open');
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
@@ -12,9 +14,12 @@ function stickyFunc() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
     menu.addClass('addTopMargin');
+    navHamburgerContent.addClass('addTopPosition');
+
   } else {
     navbar.classList.remove("sticky");
     menu.removeClass('addTopMargin');
+    navHamburgerContent.removeClass('addTopPosition');
   }
 }
 
@@ -22,6 +27,7 @@ $('.menu-toggle').click(function() {
 
   $('.site-nav').toggleClass('site-nav--open', 500);
   $(this).toggleClass('open');
-  $('#site-nav-hamberger-open').toggleClass('site-nav-hamberger-open', 500);
+  $('.site-nav-open').toggleClass('site-nav-show', 100);
+  
 
 })
