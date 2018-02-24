@@ -156,6 +156,7 @@ html, body {
   width: 100%;
   position: absolute;
   height: 30rem;
+  z-index: 100;
 }
 
 .home{
@@ -205,6 +206,12 @@ html, body {
   top:0;
 }
 
+.carousel-container{
+  height: 38.8rem;
+  background-color: gray;
+  position: relative;
+}
+
 #site-nav-hamberger-open{
   position: relative;
   z-index: 100;
@@ -233,6 +240,12 @@ html, body {
   }
   .menu-toggle {
     display: none;
+  }
+  #orderDelivery{
+    display: none;
+  }
+  .carousel-container{
+    height: 50rem;
   }
   #orderOnline {
     margin: auto;

@@ -4,6 +4,9 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var app = express();
 
+
+var navigation = require('./routes/navigation');
+
 // View Engine
 app.engine('handlebars', handlebars({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
@@ -26,26 +29,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
+
 // route
-app.get('/', function(req, res){
-  res.render('home');
-});
-
-app.get('/menu', function(req, res){
-  res.render('menu');
-});
-
-app.get('/gallery', function(req, res){
-  res.render('gallery');
-});
-
-app.get('/about', function(req, res){
-  res.render('about');
-});
-
-app.get('/contact', function(req, res){
-  res.render('contact');
-});
+app.get('/', navigation.home);
+app.get('/menu', navigation.menu);
+app.get('/gallery', navigation.gallery);
+app.get('/about', navigation.about);
+app.get('/contact', navigation.contact);
 
 
 
