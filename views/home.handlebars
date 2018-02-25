@@ -1,54 +1,19 @@
 <div class="main">
   {{>navPopup}}
-  <div class="carousel-container">
-    <div class="show-prev arrow">
-      <img id="arrow-left" src="/images/icons/arrow-left.svg" alt="">
-    </div>
-
-    <div class="show-next arrow">
-
-      <!--
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-      need to change images based on device size
-      -->
-
-      <img id="arrow-right" src="/images/icons/arrow-right.svg" alt="">
-    </div>
-    <div class="menu-btn-container">
-      <div class="menu-btn">
-        MENU
-      </div>
-
-    </div>
-    <div class="carousel-circle-btn-container">
-      <div class="carousel-circle-btns">
-        <div id="status-00" class="status-bars">
-          <div id="bar-0" class="bar">
-
-          </div>
-
-        </div>
-        <div id="status-01" class="status-bars">
-          <div id="bar-1" class="bar">
-
-          </div>
-        </div>
-        <div id="status-02" class="status-bars">
-          <div id="bar-2" class="bar">
-
-          </div>
-        </div>
-        <div id="status-03" class="status-bars">
-          <div id="bar-3" class="bar">
-
-          </div>
+  {{>carousel}}
+  <div class="home-content-container">
+    <div class="home-content-box">
+      <div class="home-title">
+        <div class="what-is-poke">
+          What is POKE?
         </div>
       </div>
+      <div class="home-desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="home-image">
+        <img src="/images/home.jpeg" alt="">
+      </div>
     </div>
-    <img id="{{imageId0}}" class="carousel-img active" src="{{imageURL}}" alt="">
-    <img id="{{imageId1}}" class="carousel-img" src="{{imageURL2}}" alt="">
-    <img id="{{imageId2}}" class="carousel-img" src="{{imageURL3}}" alt="">
-    <img id="{{imageId3}}" class="carousel-img" src="{{imageURL4}}" alt="">
   </div>
-  home here
 </div>

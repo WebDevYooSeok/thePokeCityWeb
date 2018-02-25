@@ -19,9 +19,53 @@ $(document).ready(function(){
   // initialize first bar as active
   $('#bar-0').addClass('activeBar');
 
+  $('#bar-0').click(function(){
+    currentViewItemIndex = 0;
+    showCurrentCaroselImage(currentViewItemIndex);
+
+  });
+
+  $('#bar-1').click(function(){
+    currentViewItemIndex = 1;
+    showCurrentCaroselImage(currentViewItemIndex);
+
+  });
+
+  $('#bar-2').click(function(){
+    currentViewItemIndex = 2;
+    showCurrentCaroselImage(currentViewItemIndex);
+
+  });
+  $('#bar-3').click(function(){
+    currentViewItemIndex = 3;
+    showCurrentCaroselImage(currentViewItemIndex);
+
+  });
+
+
+
+
 
 });
 
+function showCurrentCaroselImage(index){
+  showCurrentPage(index);
+  showCurrentStatus(index);
+}
+
+function showCurrentPage(index) {
+  for (var i = 0; i < totalNumOfImages; i++) {
+    var currentItemId = '#c' + i;
+    $(currentItemId).removeClass('active');
+
+  }
+
+  var findItemId = '#c' + index;
+  console.log("findItemId" + findItemId);
+  $(findItemId).addClass('active');
+
+
+}
 
 function showPrev(){
   console.log('Prev clicked');
@@ -74,7 +118,6 @@ function showCurrentImage(){
   $(currentItemId).addClass('active');
 }
 
-
 function hideCurrentBar(){
   //make current bar as background-color as gray
   var currentItemId = '#bar-'+ currentViewItemIndex;
@@ -86,6 +129,17 @@ function showCurrentBar(){
   //make next image as display:block
   currentItemId = '#bar-'+ currentViewItemIndex;
   $(currentItemId).addClass('activeBar');
+}
+
+function showCurrentStatus(index){
+  //make next bars as background-color as gray
+  for (var i = 0; i < totalNumOfImages ; i++) {
+    var currentBarId = '#bar-'+ i;
+      $(currentBarId).removeClass('activeBar');
+  }
+  currentBarId = '#bar-'+ index;
+  $(currentBarId).addClass('activeBar');
+
 }
 
 function startAutoplay(){
