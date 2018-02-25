@@ -1,1 +1,66 @@
+.arrow {
+  position: absolute;
+  top:17rem;
+  height: 1rem;
+  width: 100%;
+}
 
+.show-prev{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.show-next{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.carousel-container{
+  height: 39.8rem;
+  border: 1px solid gray;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-container img{
+  width: 100%;
+}
+
+.arrow img{
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+}
+
+.menu-btn-container{
+  position: absolute;
+  bottom: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.menu-btn{
+  background-color: white;
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+
+}
+
+.carousel-img{
+  display: none;
+}
+
+.active {
+  display: block;
+}
