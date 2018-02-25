@@ -1,0 +1,240 @@
+.slide-layout-title, .slide-layout-image, .slide-image, .menu-container, .page-title, .menu-signature-image, .arrow-down-container, .size-box, .size-image, .size-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  width: 100%;
+  height: 5rem;
+  background-color: gray;
+}
+
+.menu-title {
+  font-size: 3rem;
+}
+
+.menu-signature-container {
+  width: 100%;
+  height: 14rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.menu-signature-box {
+  width: 150%;
+  height: 100%;
+  position: relative;
+}
+
+.signature-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  bottom: -1rem;
+}
+
+.items-containers {
+  width: 100%;
+  position: relative;
+  top: 5rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-signature {
+  height: 8.5rem;
+  width: 7rem;
+}
+
+.menu-signature-image {
+  width: 100%;
+  height: 7rem;
+  background-color: red;
+}
+
+.menu-signature-title {
+  text-align: center;
+}
+
+.arrow-down {
+  position: relative;
+  top: 0;
+  height: 3rem;
+  width: 3rem;
+  background-color: red;
+  z-index: 10;
+  display: none;
+}
+
+.menu-signature-one-container {
+  position: relative;
+  width: 100%;
+  background-color: green;
+  height: 12rem;
+  top: -2.1rem;
+}
+
+.arrowActive {
+  display: block;
+}
+
+.menu-signature-one-items {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.oneActive {
+  display: block;
+}
+
+.slide-layout1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Title Image";
+  width: 100%;
+  height: 100%;
+}
+
+.slide-layout2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Image Title";
+  width: 100%;
+  height: 100%;
+}
+
+.slide-layout-title {
+  grid-area: Title;
+}
+
+.slide-layout-image {
+  grid-area: Image;
+}
+
+.title-box {
+  width: 10rem;
+  height: 7rem;
+}
+
+.slide-title {
+  font-size: 1.3rem;
+}
+
+.slide-desc {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.slide-image {
+  border: 1px solid gray;
+  width: 9rem;
+  height: 9rem;
+}
+
+.menu-container {
+  width: 100%;
+  height: 110rem;
+}
+
+.menu-box {
+  width: 95%;
+  height: 108rem;
+}
+
+.menu-start {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.menu-box-step {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.menu-box-title {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.menu-box-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Kid Small" "Medium Large";
+  width: 100%;
+  height: 15rem;
+}
+
+.size-item {
+  width: 5rem;
+  height: 6.5rem;
+}
+
+.size-image {
+  width: 100%;
+  height: 5rem;
+  border: 1px solid gray;
+}
+
+.size-price {
+  margin-top: 0.5rem
+}
+
+.menu-box-base-container, .menu-box-salad-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "White Brown" "Salad";
+  width: 100%;
+  height: 2rem;
+}
+
+.base, .protein, .mix, .sauce, .salad, .toppings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem
+}
+
+.menu-box-protein-container, .menu-box-mix-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Salmon Tuna" "Spicy Shrimp" "Scallop Octopus" "Chicken Yellowtail";
+  width: 100%;
+  height: 10rem;
+}
+
+.menu-box-sauce-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "Salmon Tuna" "Spicy Shrimp" "Scallop Octopus" "Chicken Yellowtail";
+  width: 100%;
+  height: 7.5rem;
+}
+
+.menu-box-toppings-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 17.5rem;
+}
+
+.protein {
+  height: 2rem;
+}
