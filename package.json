@@ -25,6 +25,6 @@
     "express-handlebars": "^3.0.0"
   },
   "engines": {
-    "node": "*"
+    "node": "^8.9.4"
   }
 }
