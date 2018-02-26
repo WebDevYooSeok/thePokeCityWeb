@@ -1,10 +1,7 @@
-var carouselArray = require('../carousel.json');
-console.log(carouselArray);
 
 
 exports.home = function(req, res){
   res.render('home');
-
 
 };
 
