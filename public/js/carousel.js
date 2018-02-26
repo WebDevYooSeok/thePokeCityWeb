@@ -3,7 +3,7 @@ var totalNumOfImages = 4;
 
 
 $(document).ready(function(){
-  //startAutoplay();
+  startAutoplay();
   $('#arrow-left').click(function(){
     showPrev();
   })
