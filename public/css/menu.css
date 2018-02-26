@@ -1,4 +1,4 @@
-.slide-layout-title, .slide-layout-image, .slide-image, .menu-container, .page-title, .menu-signature-image, .arrow-down-container, .size-box, .size-image, .size-price {
+.slide-layout-title, .slide-layout-image, .slide-image, .menu-container, .page-title, .menu-signature-image, .arrow-down-container, .size-box, .size-image, .size-price{
   display: flex;
   flex-direction: row;
   justify-content: center;

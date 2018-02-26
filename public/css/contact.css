@@ -1,0 +1,183 @@
+.contact-title{
+  grid-area: Title;
+  margin: auto;
+  font-size: 3rem;
+}
+.contact-content-container{
+  width: 100%;
+    height: 102rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content-box{
+  width: 95%;
+    height: 25rem;
+
+    display: grid;
+    margin: 1rem 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "Info" "Map";
+}
+.contact-form-box{
+  width: 95%;
+    height: 15rem;
+
+    margin: 1rem 0;
+}
+.contact-info{
+  grid-area: Info;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  grid-template-areas: "Name" "Adde" "Phone";
+
+}
+.contact-map{
+  grid-area: Map;
+  border: 1px solid gray;
+}
+
+.contact-name, .contact-adde, .contact-phone, .contact-btn-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact-name{
+  grid-area: Name;
+  font-size: 2rem;
+  text-align: left;
+}
+.contact-adde{
+  grid-area: Adde;
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+.contact-phone{
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+.contact-content-box2{
+  width: 100%;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr;
+    grid-template-areas: "Title" "Desc" "Btn";
+}
+.contact-title2{
+  grid-area: Title;
+    margin: auto;
+}
+.contact-desc{
+  grid-area: Desc;
+    margin: auto;
+    text-align: center;
+}
+.contact-btn-box{
+  grid-area: Btn;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-btn{
+  width: 15rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 1px solid #ededed;
+}
+.form-popup-container{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 0;
+background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  z-index: 100;
+}
+.form-popup-box{
+  width: 95%;
+  height: 100%;
+
+}
+
+.formActive{
+  height: 43.5rem;
+}
+.form-popup-title{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.form-popup-x{
+  position: absolute;
+  right: 1rem;
+  top: 0;
+
+}
+.form-popup-inputs{
+  height: 30rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.5fr 2fr;
+  grid-template-areas: "Title" "Desc" "Btn";
+
+}
+.form-popup-inputs input{
+  width: 18rem;
+  height: 3rem;
+}
+
+.form-popup-inputs input::placeholder{
+  font-size: 1.5rem;
+}
+
+.form-popup-name, .form-popup-email, .form-popup-mesg, .form-popup-submit, .thank{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-popup-mesg input {
+  height: 15rem;
+}
+.form-popup-submit{
+  width: 100%;
+  height: 5rem;
+}
+.form-confirm{
+  position: fixed;
+  top:13rem;
+
+  width: 100%;
+  height: 0;
+  background-color: yellow;
+}
+.thank{
+  display: none;
+  margin: auto;
+  height: 15rem;
+  width: 17rem;
+  background-color: red;
+}
